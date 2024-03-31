@@ -1,0 +1,26 @@
+1. process.py 
+做資料前處理: 標準化、剔除離群值、過採樣
+
+2.KNN_sklearn.py
+KNN分類未知資料
+
+3.kmeansAR.py
+用Kmeans演算法 將資料分群，也包含了算準確率的部分
+
+4.scatter.py
+將資料做降維處理，秀出多張圖來看看不同資料處理方法的結果
+
+1. No adjust: 只有經過標準化的train data
+2. 剔除outlier
+3. 剔除outlier + ADASYN
+4~8: 剔除outlier + 不同的oversampling 方法(套件)
+9~10:剔除outlier + 混和採樣(結合oversampling + undersampling) 也是套件
+11~20: 第二張圖 + 不同的undersampling方法(套件)
+
+看法: 
+ 1  2  3  4  5
+ 6  7  8  9  10
+11 12 13 14 15
+16 17 18 19 20
+
+(No adjust對應到1，After own ADASYN 對應到3)
